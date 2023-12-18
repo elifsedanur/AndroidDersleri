@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TasarimCalismasi</string>
+    <string name="KullaniciAdi">Username</string>
+    <string name="Sifre">Password</string>
+    <string name="ButtonAdi">LOGİN</string>
+    <string name="Yardım">Help ?</string>
+</resources>

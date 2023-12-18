@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_kitap"
+    app:startDestination="@id/fragmentKitaplar">
+
+    <fragment
+        android:id="@+id/fragmentKitaplar"
+        android:name="com.info.recylerviewkitapornegi.FragmentKitaplar"
+        android:label="fragment_kitaplar"
+        tools:layout="@layout/fragment_kitaplar" >
+        <action
+            android:id="@+id/action_fragmentKitaplar_to_fragmentDetaylar"
+            app:destination="@id/fragmentDetaylar" />
+        <action
+            android:id="@+id/action_fragmentKitaplar_to_fragmentFavoriler"
+            app:destination="@id/fragmentFavoriler" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetaylar"
+        android:name="com.info.recylerviewkitapornegi.FragmentDetaylar"
+        android:label="fragment_detaylar"
+        tools:layout="@layout/fragment_detaylar" >
+        <argument
+            android:name="detaylar"
+            app:argType="com.info.recylerviewkitapornegi.Kitaplar" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFavoriler"
+        android:name="com.info.recylerviewkitapornegi.FragmentFavoriler"
+        android:label="fragment_favoriler"
+        tools:layout="@layout/fragment_favoriler" >
+        <argument
+            android:name="favoriler"
+            app:argType="com.info.recylerviewkitapornegi.Kitaplar[]" />
+    </fragment>
+</navigation>

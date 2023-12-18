@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AlertViewKullanimi</string>
+    <string name="bosluk"> </string>
+    <string name="hint">Veri Giriniz..</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/romanRakaminaDonusumFragment">
+    <fragment
+        android:id="@+id/romaToIntFragment"
+        android:name="com.info.romanrakamdonusturucu.RomaToIntFragment"
+        android:label="fragment_roma_to_int"
+        tools:layout="@layout/fragment_roma_to_int" />
+    <fragment
+        android:id="@+id/romanRakaminaDonusumFragment"
+        android:name="com.info.romanrakamdonusturucu.RomanRakaminaDonusumFragment"
+        android:label="fragment_roman_rakamina_donusum"
+        tools:layout="@layout/fragment_roman_rakamina_donusum" />
+</navigation>
